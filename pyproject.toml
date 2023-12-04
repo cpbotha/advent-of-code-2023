@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "aoc2023"
+version = "0.1.0"
+description = ""
+authors = ["Charl P. Botha <cpbotha@vxlabs.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyter = "*"
+pandas = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.2.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+# change black's default from 88 characters to 120 characters
+line-length = 120
