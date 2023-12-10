@@ -71,14 +71,6 @@ pipe_to_io = {
     "F": [Dir.N, Dir.W],
 }
 
-# we work in row, column coordinates
-dir_to_cords = {
-    Dir.N: (-1, 0),
-    Dir.E: (0, 1),
-    Dir.S: (1, 0),
-    Dir.W: (0, -1),
-}
-
 
 def calc_dist(scoord):
     # unvisited = {(r, c): sys.maxsize for r in range(rows) for c in range(cols) if lines[r][c] != "."}
