@@ -148,6 +148,7 @@ while True:
     if cur == scoord:
         break
 
+# if you just eval this in notebook mode, it shows a cool little drawing of the filled polygon!
 poly = shapely.Polygon(loop_coords.keys())
 
 non_loop_coords = {(r, c): True for r in range(rows) for c in range(cols) if (r, c) not in loop_coords}
