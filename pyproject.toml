@@ -8,6 +8,7 @@ authors = ["Charl P. Botha <cpbotha@vxlabs.com>"]
 python = "^3.11"
 jupyter = "*"
 pandas = "*"
+shapely = "^2.0.2"
 
 [tool.poetry.dev-dependencies]
 
@@ -17,4 +18,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.black]
 # change black's default from 88 characters to 120 characters
+line-length = 120
+
+# https://docs.astral.sh/ruff/tutorial/#configuration
+[tool.ruff]
 line-length = 120
